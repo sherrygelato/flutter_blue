@@ -52,10 +52,6 @@ class BluetoothOffScreen extends StatelessWidget {
             ),
             Text(
               'Bluetooth Adapter is ${state != null ? state.toString().substring(15) : 'not available'}.',
-              style: Theme.of(context)
-                  .primaryTextTheme
-                  .subhead
-                  ?.copyWith(color: Colors.white),
             ),
           ],
         ),
@@ -205,7 +201,7 @@ class DeviceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(device.name),
+        title: Text(device.name + "hihihihi"),
         actions: <Widget>[
           StreamBuilder<BluetoothDeviceState>(
             stream: device.state,
